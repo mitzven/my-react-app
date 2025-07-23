@@ -1,25 +1,14 @@
+// src/App.js
 import "./App.css";
-import logo from "./logo.svg";
+import "./components/navbar.css"; // Tu peux le laisser si tu y ajoutes du style
+import CustomNavbar from "./components/navbar";
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-
-        <h1>Hello World</h1>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <CustomNavbar />
+      <h1>Bonjour, je suis John Doe</h1>
+      <h2>Développeur web full stack</h2>
     </div>
   );
 }
