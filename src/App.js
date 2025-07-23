@@ -1,16 +1,15 @@
-// src/App.js
-import "./App.css";
-import "./components/navbar.css"; // Tu peux le laisser si tu y ajoutes du style
+import { Route, BrowserRouter as Router, Routes } from "react-router-dom";
 import CustomNavbar from "./components/navbar";
+import Home from "./pages/Home";
 
 function App() {
   return (
-    <div className="App">
+    <Router>
       <CustomNavbar />
-      <h1>Bonjour, je suis John Doe</h1>
-      <h2>Développeur web full stack</h2>
-    </div>
+      <Routes>
+        <Route path="/" element={<Home />} />
+      </Routes>
+    </Router>
   );
 }
-
 export default App;
