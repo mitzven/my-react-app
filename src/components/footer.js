@@ -13,10 +13,28 @@ function Footer() {
             <h5 className="title-footer">John Doe</h5>
             <ul className="list-unstyled">
               <li>
-                40 rue Laure Diebold <br></br> 69009 Lyon, France
+                <a
+                  href="https://maps.app.goo.gl/n8own3BHS3ic6TkXA"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="footer-link"
+                >
+                  40 rue Laure Diebold
+                  <br />
+                  69009 Lyon, France
+                </a>
               </li>
-              <li>10 20 30 40 50</li>
-              <li>john.doe@gmail.com</li>
+
+              <li>
+                <a href="tel:" className="footer-link">
+                  1020304050{" "}
+                </a>
+              </li>
+              <li>
+                <a href="mailto:" className="footer-link">
+                  john.doe@gmail.com
+                </a>
+              </li>
             </ul>
             <div className="d-flex gap-3 mt-2">
               <a
