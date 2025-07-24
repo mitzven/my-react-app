@@ -1,7 +1,3 @@
-<<<<<<< Updated upstream
-function Home() {
-  return <h1>Bienvenue sur la page d’accueil</h1>;
-=======
 import { useEffect, useState } from "react";
 import GithubModal from "../components/GithubModal";
 import "./Home.css";
@@ -117,6 +113,5 @@ function Home() {
       </div>
     </div>
   );
->>>>>>> Stashed changes
 }
 export default Home;
