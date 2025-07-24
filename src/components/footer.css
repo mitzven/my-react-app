@@ -1,0 +1,42 @@
+/* Styles globaux du footer */
+.custom-footer {
+  background-color: #222 !important;
+  color: white !important;
+  padding: 1rem 0;
+  width: 100%;
+}
+
+.title-footer {
+  font-weight: 600;
+}
+
+/* Lien du footer */
+.footer-link {
+  color: #ccc;
+  text-decoration: none;
+  transition: all 0.2s;
+}
+
+.footer-link:hover {
+  font-weight: bold;
+  color: white;
+}
+
+/* Icônes réseaux sociaux */
+.footer-icon {
+  color: #696969;
+  font-size: 1.5rem;
+  transition: color 0.3s;
+}
+
+.footer-icon:hover {
+  color: white;
+}
+
+/* Correction pour les colonnes Bootstrap */
+.footer-inner .row,
+.footer-inner .col,
+.footer-inner .col-md-4 {
+  background-color: transparent !important;
+  color: inherit !important;
+}
