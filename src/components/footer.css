@@ -1,4 +1,3 @@
-/* Styles globaux du footer */
 .custom-footer {
   background-color: #212529;
   color: white;
@@ -10,7 +9,6 @@
   font-weight: 600;
 }
 
-/* Lien du footer */
 .footer-link {
   color: #ccc;
   text-decoration: none;
@@ -22,7 +20,6 @@
   color: white;
 }
 
-/* Icônes réseaux sociaux */
 .footer-icon {
   color: #696969;
   font-size: 1.5rem;

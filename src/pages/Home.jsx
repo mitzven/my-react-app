@@ -1,12 +1,11 @@
 import { useEffect, useState } from "react";
 import GithubModal from "../components/GithubModal";
-import "./Home.css";
 
 function Home() {
   const [githubData, setGithubData] = useState(null);
 
   useEffect(() => {
-    fetch("https://api.github.com/users/octocat") // Remplace par ton username GitHub
+    fetch("https://api.github.com/users/mitzven")
       .then((res) => res.json())
       .then((data) => setGithubData(data))
       .catch((err) => console.error("Erreur GitHub :", err));
@@ -17,8 +16,8 @@ function Home() {
       <div className="home-container-p1">
         <div className="img-hero"></div>
         <div className="content">
-          <h1 className="Title">Bonjour, je suis John Doe</h1>
-          <h2 className="Subtitle-style1">Développeur web full stack</h2>
+          <h1 className="Title"> Bonjour, je suis John Doe</h1>
+          <h2 className="Styleh2">Développeur web full stack</h2>
           <div>
             <button
               className="btn btn-danger"
@@ -27,16 +26,15 @@ function Home() {
             >
               En savoir plus
             </button>
-            {/* Passe les données GitHub en props */}
             <GithubModal githubData={githubData} />
           </div>
         </div>
       </div>
       <div className="container my-5">
         <div className="row row-border">
-          {/* Colonne A propos */}
           <div className="col-md-6 mb-4">
-            <h3 className="Subtitle-style2">À propos</h3>
+            <h4 className="Styleh4">À propos</h4>
+            <div className="long-blue-line"></div>
             <img
               src="/images/john-doe-about.jpg"
               alt="John Doe"
@@ -62,9 +60,9 @@ function Home() {
             </p>
           </div>
 
-          {/* Colonne Mes compétences */}
           <div className="col-md-6 mb-4">
-            <h3 className="Subtitle-style2">Mes compétences</h3>
+            <h4>Mes compétences</h4>
+            <div className="long-blue-line"></div>
             <p>HTML5 90%</p>
             <div className="progress mb-3">
               <div

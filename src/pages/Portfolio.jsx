@@ -46,11 +46,11 @@ const projects = [
 const Portfolio = () => {
   return (
     <div className="container my-5 portfolio-container">
-      <h3 className="text-center mb-1">Portfolio</h3>
-      <p className="text-center text-muted">
+      <h3 className="Styleh3 text-center mb-1">Portfolio</h3>
+      <p className="small-writing text-center text-muted">
         Voici quelques-unes de mes réalisations.
       </p>
-      <div className="trait-bleu-short"></div>
+      <div className="short-blue-line"></div>
       <div className="text-center row g-4">
         {projects.map((project, index) => (
           <div className="col-md-4" key={index}>
@@ -61,7 +61,7 @@ const Portfolio = () => {
                 alt={project.title}
               />
               <div className="card-body">
-                <h4 className="card-title">{project.title}</h4>
+                <h4 className="Styleh4">{project.title}</h4>
                 <p className="card-text">{project.desc}</p>
                 <a
                   href={project.link}

@@ -1,5 +1,3 @@
-import React from "react";
-
 function Services() {
   return (
     <div>
@@ -7,18 +5,15 @@ function Services() {
         <img src="/images/banner.jpg" alt="banner" className="img-fluid" />{" "}
       </div>
       <div className="container my-5 px-3">
-        <h3 className="text-center mb-1 fs-3 fs-md-2 Subtitle-style1 ">
-          Mon offre de services
-        </h3>
-        <p className="text-center mb-3 small text-muted">
+        <h3 className="Styleh3 text-center mb-1">Mon offre de services</h3>
+        <p className="text-center mb-3 small text-muted small-writing">
           Voici les prestations sur lesquelles je peux intervenir
         </p>
-        <div className="trait-bleu"></div>
+        <div className="short-blue-line"></div>
 
         <div className="row">
-          {/* Fresh Food */}
           <div className="col-12 col-md-4 mb-4">
-            <div className="card custom-card text-center p-3">
+            <div className="card custom-card shadow-sm text-center p-3">
               <div className="card-body">
                 <i className="bi bi-brush fs-1 text-primary mb-3"></i>
                 <h4 className="card-title fw-bold">UX Design</h4>
@@ -33,7 +28,6 @@ function Services() {
             </div>
           </div>
 
-          {/* Carte Développement web */}
           <div className="col-12 col-md-4 mb-4">
             <div className="card custom-card h-100 shadow-sm text-center p-3">
               <div className="card-body">
@@ -49,7 +43,6 @@ function Services() {
             </div>
           </div>
 
-          {/* Carte Référencement */}
           <div className="col-12 col-md-4 mb-4">
             <div className="card custom-card h-100 shadow-sm text-center p-3">
               <div className="card-body">

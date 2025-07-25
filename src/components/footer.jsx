@@ -1,4 +1,3 @@
-// src/components/Footer.js
 import { Col, Container, Row } from "react-bootstrap";
 import "./footer.css";
 
@@ -7,7 +6,6 @@ function Footer() {
     <footer className="custom-footer">
       <Container className="footer-inner">
         <Row>
-          {/* Colonne 1 */}
           <Col xs={12} md={4} className="mb-4">
             <h5 className="title-footer">John Doe</h5>
             <ul className="list-unstyled">
@@ -60,7 +58,6 @@ function Footer() {
             </div>
           </Col>
 
-          {/* Colonne 2 */}
           <Col xs={12} md={4} className="mb-4">
             <h5 className="title-footer">Liens utiles</h5>
             <ul className="list-unstyled">
@@ -70,29 +67,28 @@ function Footer() {
                 </a>
               </li>
               <li>
-                <a href="/services" className="footer-link">
+                <a href="/Services" className="footer-link">
                   Services
                 </a>
               </li>
               <li>
-                <a href="/portfolio" className="footer-link">
+                <a href="/Portfolio" className="footer-link">
                   Portfolio
                 </a>
               </li>
               <li>
-                <a href="/contact" className="footer-link">
+                <a href="/Contact" className="footer-link">
                   Me contacter
                 </a>
               </li>
               <li>
-                <a href="/mentions-legales" className="footer-link">
+                <a href="/Mentions" className="footer-link">
                   Mentions légales
                 </a>
               </li>
             </ul>
           </Col>
 
-          {/* Colonne 3 */}
           <Col xs={12} md={4} className="mb-4">
             <h5 className="title-footer">Mes dernières réalisations</h5>
             <ul className="list-unstyled">

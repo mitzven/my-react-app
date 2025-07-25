@@ -4,41 +4,55 @@
   font-family: "Nunito Sans", sans-serif;
 }
 
+/*Mise en forme des titres, du corp et des lignes du site web*/
 .Title {
   font-weight: 600;
   font-size: 4rem;
 }
 
-.Subtitle-style1 {
+.Styleh2 {
   font-weight: 600;
   font-size: 3rem;
 }
 
-.Subtitle-style2 {
-  border-bottom: 4px solid #0d6efd;
+.Styleh3 {
   font-weight: 600;
-  padding-bottom: 10px;
-  margin-bottom: 50px;
+  font-size: 2rem;
 }
 
-.custom-card {
-  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+.Styleh4 {
+  font-weight: 600;
 }
 
-.custom-card:hover {
-  background-color: #efefef;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+body {
+  font-weight: 400;
 }
 
-.trait-bleu-short {
+.small-writing {
+  font-weight: 400;
+  font-size: 0.7rem;
+}
+
+.medium-writing {
+  font-weight: 400;
+  font-size: 0.8rem;
+  margin-bottom: 15px;
+}
+
+.alwaysdata {
+  font-size: 1.4rem;
+  margin-bottom: 2px;
+}
+
+.short-blue-line {
   width: 100%;
-  max-width: 500px;
+  max-width: 350px;
   height: 4px;
   background-color: #0d6efd;
   margin: 0 auto 40px auto;
 }
 
-.trait-bleu-long {
+.long-blue-line {
   width: 100%;
   max-width: 1000px;
   height: 4px;
@@ -46,24 +60,101 @@
   margin: 0 auto 40px auto;
 }
 
-/* Centrage du container */
-.portfolio-container {
-  max-width: 1000px;
-  margin: 0 auto;
+/*Mise en forme de la homepage*/
+.home-container-p1 {
+  position: relative;
+  background-image: url(../public/images/hero-bg.jpg);
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
 }
 
-/* Réduction de la taille des cards */
-.card {
-  font-size: 0.9rem;
+.img-hero {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(255, 255, 255, 0.323);
+  z-index: 2;
+  pointer-events: none;
 }
 
-.contact-container {
-  max-width: 1000px; /* ou 800px, selon ton goût */
-  margin: 0 auto;
-  padding: 0 15px; /* pour éviter que ça touche les bords */
+.content {
+  position: relative;
+}
+
+.row-border {
+  display: flex;
+  justify-content: center;
   background-color: white;
   border-radius: 10px;
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
   padding: 30px;
   margin: 20px auto;
+}
+
+/* Mise en forme de la page Portfolio*/
+.portfolio-container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Mise en forme de la page Contact*/
+.contact-container {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 0 15px;
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  padding: 30px;
+  margin: 20px auto;
+}
+
+.margin-p {
+  margin-bottom: 0rem;
+}
+
+/*Mise en forme des cards*/
+.custom-card {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+.custom-card:hover {
+  background-color: #efefef;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.card {
+  font-size: small;
+}
+
+/*Mise en forme des icônes*/
+.icon {
+  margin-right: 5px;
+}
+
+/*Media Querie*/
+@media (max-width: 480px) {
+  .medium-writing {
+    font-size: 0.9rem;
+  }
+  .small-writing {
+    font-size: 0.8rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .custom-card {
+    margin-bottom: 1.5rem;
+  }
 }
