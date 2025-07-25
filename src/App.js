@@ -5,8 +5,8 @@ import Footer from "./components/footer";
 import CustomNavbar from "./components/navbar";
 import "./index.css";
 import Home from "./pages/Home";
-import Services from "./pages/Services";
 import Portfolio from "./pages/Portfolio";
+import Services from "./pages/Services";
 
 function App() {
   return (

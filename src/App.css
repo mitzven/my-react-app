@@ -37,3 +37,14 @@
   background-color: #0d6efd;
   margin: 0 auto 40px auto;
 }
+
+/* Centrage du container */
+.portfolio-container {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+/* Réduction de la taille des cards */
+.card {
+  font-size: 0.9rem;
+}

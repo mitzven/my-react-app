@@ -1,3 +1,5 @@
+import React from "react";
+
 function Services() {
   return (
     <div>
@@ -14,7 +16,7 @@ function Services() {
         <div className="trait-bleu"></div>
 
         <div className="row">
-          {/* Carte UX Design */}
+          {/* Fresh Food */}
           <div className="col-12 col-md-4 mb-4">
             <div className="card custom-card text-center p-3">
               <div className="card-body">

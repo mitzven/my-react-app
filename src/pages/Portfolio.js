@@ -1,72 +1,84 @@
-function Portfolio() {
+const projects = [
+  {
+    title: "Fresh Food",
+    desc: "Site de vente de produits frais en ligne",
+    tech: "Site réalisé avec PHP et MySQL",
+    img: "/images/portfolio/fresh-food.jpg",
+    link: "https://www.google.com/",
+  },
+  {
+    title: "Restaurant Akira",
+    desc: "Site de vente de produits frais en ligne",
+    tech: "Site réalisé avec WordPress",
+    img: "/images/portfolio/restaurant-japonais.jpg",
+    link: "https://www.google.com/",
+  },
+  {
+    title: "Espace bien-être",
+    desc: "Site de vente de produits frais en ligne",
+    tech: "Site réalisé avec LARAVEL",
+    img: "/images/portfolio/espace-bien-etre.jpg",
+    link: "https://www.google.com/",
+  },
+  {
+    title: "SEO",
+    desc: "Amélioration du référencement d’un site e-commerce",
+    tech: "Utilisation des outils SEO",
+    img: "/images/portfolio/seo.jpg",
+    link: "https://www.google.com/",
+  },
+  {
+    title: "Création d’une API",
+    desc: "Création d’une API RESTFULL publique",
+    tech: "PHP - SYMFONY",
+    img: "/images/portfolio/coder.jpg",
+    link: "https://www.google.com/",
+  },
+  {
+    title: "Maquette d’un site web",
+    desc: "Création du prototype d’un site",
+    tech: "Réalisé avec FIGMA",
+    img: "/images/portfolio/screens.jpg",
+    link: "https://www.google.com/",
+  },
+];
+
+const Portfolio = () => {
   return (
-    <div>
-      <div>
-        <img src="/images/banner.jpg" alt="banner" className="img-fluid" />{" "}
-      </div>
-      <div className="container my-5 px-3">
-        <h3 className="text-center mb-1 fs-3 fs-md-2 Subtitle-style1 ">
-          Portfolio
-        </h3>
-        <p className="text-center mb-3 small text-muted">
-          Voici quelques unes de mes réalisations
-        </p>
-        <div className="trait-bleu"></div>
-
-        <div className="row">
-          {/* Carte UX Design */}
-          <div className="col-12 col-md-4 mb-4">
-            <div className="card custom-card text-center p-3">
+    <div className="container my-5 portfolio-container">
+      <h3 className="text-center mb-1">Portfolio</h3>
+      <p className="text-center text-muted">
+        Voici quelques-unes de mes réalisations.
+      </p>
+      <div className="trait-bleu"></div>
+      <div className="text-center row g-4">
+        {projects.map((project, index) => (
+          <div className="col-md-4" key={index}>
+            <div className="custom-card card h-500">
+              <img
+                src={project.img}
+                className="card-img-top img-fluid mb-3"
+                alt={project.title}
+              />
               <div className="card-body">
-                <i className="bi bi-brush fs-1 text-primary mb-3"></i>
-                <h4 className="card-title fw-bold">UX Design</h4>
-                <p className="card-text">
-                  L'UX Design est une discipline qui consiste à concevoir des
-                  produits (sites web, applications mobiles, logiciels, objets
-                  connectés, etc.) en plaçant l'utilisateur au centre des
-                  préoccupations. L'objectif est de rendre l'expérience
-                  utilisateur la plus fluide et agréable possible.
-                </p>
+                <h4 className="card-title">{project.title}</h4>
+                <p className="card-text">{project.desc}</p>
+                <a
+                  href={project.link}
+                  className="btn btn-primary"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Voir le site
+                </a>
               </div>
+              <div className="card-footer text-muted small">{project.tech}</div>
             </div>
           </div>
-
-          {/* Carte Développement web */}
-          <div className="col-12 col-md-4 mb-4">
-            <div className="card custom-card h-100 shadow-sm text-center p-3">
-              <div className="card-body">
-                <i className="bi bi-code-slash fs-1 text-primary mb-3"></i>
-                <h4 className="card-title fw-bold">Développement web</h4>
-                <p className="card-text">
-                  Le développement de sites web consiste à créer des sites
-                  internet en utilisant des langages de programmation (HTML,
-                  CSS, JavaScript, PHP, etc.) et des frameworks (Bootstrap,
-                  React, Angular, etc.).
-                </p>
-              </div>
-            </div>
-          </div>
-
-          {/* Carte Référencement */}
-          <div className="col-12 col-md-4 mb-4">
-            <div className="card custom-card h-100 shadow-sm text-center p-3">
-              <div className="card-body">
-                <i className="bi bi-search fs-1 text-primary mb-3"></i>
-                <h4 className="card-title fw-bold">Référencement</h4>
-                <p className="card-text">
-                  Le référencement naturel (SEO) est une technique qui consiste
-                  à optimiser un site web pour le faire remonter dans les
-                  résultats des moteurs de recherche (Google, Bing, Yahoo,
-                  etc.). L'objectif est d'attirer un maximum de visiteurs
-                  qualifiés sur le site.
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
+        ))}
       </div>
     </div>
   );
-}
+};
 
 export default Portfolio;
