@@ -50,7 +50,7 @@ const Portfolio = () => {
       <p className="text-center text-muted">
         Voici quelques-unes de mes réalisations.
       </p>
-      <div className="trait-bleu"></div>
+      <div className="trait-bleu-short"></div>
       <div className="text-center row g-4">
         {projects.map((project, index) => (
           <div className="col-md-4" key={index}>
