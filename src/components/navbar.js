@@ -22,13 +22,13 @@ function CustomNavbar() {
             <Nav.Link as={NavLink} to="/Services" className="nav-link">
               SERVICES
             </Nav.Link>
-            <Nav.Link as={NavLink} to="/portfolio" className="nav-link">
+            <Nav.Link as={NavLink} to="/Portfolio" className="nav-link">
               PORTFOLIO
             </Nav.Link>
-            <Nav.Link as={NavLink} to="/contact" className="nav-link">
+            <Nav.Link as={NavLink} to="/Contact" className="nav-link">
               CONTACT
             </Nav.Link>
-            <Nav.Link as={NavLink} to="/mentions" className="nav-link">
+            <Nav.Link as={NavLink} to="/Mentions" className="nav-link">
               MENTIONS LÉGALES
             </Nav.Link>
           </Nav>
