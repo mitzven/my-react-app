@@ -20,7 +20,6 @@ function GithubModal() {
     >
       <div className="modal-dialog modal-dialog-centered modal-lg">
         <div className="modal-content custom-modal-content">
-          {/* Ajout du header avec le titre et bouton fermeture */}
           <div className="modal-header">
             <h4 className="modal-title">Mon profil GitHub</h4>
             <button
@@ -43,7 +42,7 @@ function GithubModal() {
                 </div>
                 <div className="right-column">
                   <p>
-                    <i class="bi bi-person icon"></i>{" "}
+                    <i className="bi bi-person icon"></i>{" "}
                     <a
                       href={githubData.html_url}
                       target="_blank"
@@ -55,26 +54,26 @@ function GithubModal() {
                   </p>
                   <hr />
                   <p>
-                    <i class="bi bi-geo-alt icon"></i>{" "}
+                    <i className="bi bi-geo-alt icon"></i>{" "}
                     {githubData.location || "2, Rue de Paris 94000 Créteil"}
                   </p>
                   <hr />
                   <p>
-                    <i class="bi bi-card-text icon"></i> {githubData.bio}
+                    <i className="bi bi-card-text icon"></i> {githubData.bio}
                   </p>
                   <hr />
                   <p>
-                    <i class="bi bi-box icon"></i> Repos publics :{""}
+                    <i className="bi bi-box icon"></i> Repos publics :{" "}
                     {githubData.public_repos}
                   </p>
                   <hr />
                   <p>
-                    <i class="bi bi-people icon"></i> Followers :{" "}
+                    <i className="bi bi-people icon"></i> Followers :{" "}
                     {githubData.followers}
                   </p>
                   <hr />
                   <p>
-                    <i class="bi bi-people icon"></i> Following :{" "}
+                    <i className="bi bi-people icon"></i> Following :{" "}
                     {githubData.following}
                   </p>
                 </div>

@@ -5,6 +5,8 @@ import Footer from "./components/footer";
 import CustomNavbar from "./components/navbar";
 import "./index.css";
 import Home from "./pages/Home";
+import Services from "./pages/Services";
+import Portfolio from "./pages/Portfolio";
 
 function App() {
   return (
@@ -12,11 +14,12 @@ function App() {
       <CustomNavbar />
       <Routes>
         <Route path="/" element={<Home />} />
-        <Route path="/" element={<services />} />
+        <Route path="/services" element={<Services />} />
+        <Route path="/Portfolio" element={<Portfolio />} />
 
         {/* ajoute d'autres routes ici plus tard */}
       </Routes>
-      <Footer /> {/* <-- Corrigé */}
+      <Footer />
     </Router>
   );
 }

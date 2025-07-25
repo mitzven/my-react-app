@@ -8,7 +8,7 @@ function Footer() {
       <Container className="footer-inner">
         <Row>
           {/* Colonne 1 */}
-          <Col md={4} className="mb-4">
+          <Col xs={12} md={4} className="mb-4">
             <h5 className="title-footer">John Doe</h5>
             <ul className="list-unstyled">
               <li>
@@ -61,7 +61,7 @@ function Footer() {
           </Col>
 
           {/* Colonne 2 */}
-          <Col md={4} className="mb-4">
+          <Col xs={12} md={4} className="mb-4">
             <h5 className="title-footer">Liens utiles</h5>
             <ul className="list-unstyled">
               <li>
@@ -93,7 +93,7 @@ function Footer() {
           </Col>
 
           {/* Colonne 3 */}
-          <Col md={4}>
+          <Col xs={12} md={4} className="mb-4">
             <h5 className="title-footer">Mes dernières réalisations</h5>
             <ul className="list-unstyled">
               <li>

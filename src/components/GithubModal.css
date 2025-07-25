@@ -11,10 +11,14 @@
 
 .left-column {
   max-width: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .right-column {
   max-width: 50%;
+  flex: 2;
 }
 
 #githubModal .modal-content {
@@ -57,4 +61,31 @@ modal-title .custom-modal-content {
 
 hr {
   border-top: 1px solid rgba(152, 148, 148);
+}
+
+@media (max-width: 768px) {
+  .modal-grid {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .left-column,
+  .right-column {
+    max-width: 100%;
+    width: 100%;
+  }
+
+  .right-column {
+    padding-top: 10px;
+  }
+
+  .modal-body p {
+    font-size: 14px;
+  }
+
+  .modal-body hr {
+    width: 80%;
+    margin: 8px auto;
+  }
 }

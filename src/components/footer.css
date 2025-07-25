@@ -1,8 +1,8 @@
 /* Styles globaux du footer */
 .custom-footer {
-  background-color: #222 !important;
-  color: white !important;
-  padding: 1rem 0;
+  background-color: #212529;
+  color: white;
+  padding: 3rem 1rem;
   width: 100%;
 }
 
@@ -31,12 +31,4 @@
 
 .footer-icon:hover {
   color: white;
-}
-
-/* Correction pour les colonnes Bootstrap */
-.footer-inner .row,
-.footer-inner .col,
-.footer-inner .col-md-4 {
-  background-color: transparent !important;
-  color: inherit !important;
 }

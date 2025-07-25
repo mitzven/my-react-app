@@ -4,6 +4,7 @@ import Navbar from "react-bootstrap/Navbar";
 import { NavLink } from "react-router-dom";
 import "/Users/milevaaadaube/my-react-app/src/App.css";
 import "/Users/milevaaadaube/my-react-app/src/index.css";
+import "/Users/milevaaadaube/my-react-app/src/components/navbar.css";
 
 function CustomNavbar() {
   return (
@@ -18,7 +19,7 @@ function CustomNavbar() {
             <Nav.Link as={NavLink} to="/" end className="nav-link">
               HOME
             </Nav.Link>
-            <Nav.Link as={NavLink} to="/services" className="nav-link">
+            <Nav.Link as={NavLink} to="/Services" className="nav-link">
               SERVICES
             </Nav.Link>
             <Nav.Link as={NavLink} to="/portfolio" className="nav-link">

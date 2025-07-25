@@ -17,8 +17,8 @@ function Home() {
       <div className="home-container-p1">
         <div className="img-hero"></div>
         <div className="content">
-          <h1 className="HomeTitle">Bonjour, je suis John Doe</h1>
-          <h2 className="HomeSubtitle1">Développeur web full stack</h2>
+          <h1 className="Title">Bonjour, je suis John Doe</h1>
+          <h2 className="Subtitle-style1">Développeur web full stack</h2>
           <div>
             <button
               className="btn btn-danger"
@@ -33,10 +33,10 @@ function Home() {
         </div>
       </div>
       <div className="container my-5">
-        <div className="row">
+        <div className="row row-border">
           {/* Colonne A propos */}
           <div className="col-md-6 mb-4">
-            <h3 className="HomeSubtitle2 fw-bold">À propos</h3>
+            <h3 className="Subtitle-style2">À propos</h3>
             <img
               src="/images/john-doe-about.jpg"
               alt="John Doe"
@@ -64,7 +64,7 @@ function Home() {
 
           {/* Colonne Mes compétences */}
           <div className="col-md-6 mb-4">
-            <h3 className="HomeSubtitle2 fw-bold">Mes compétences</h3>
+            <h3 className="Subtitle-style2">Mes compétences</h3>
             <p>HTML5 90%</p>
             <div className="progress mb-3">
               <div
@@ -107,8 +107,6 @@ function Home() {
           </div>
         </div>
       </div>
-
-      {/* ... le reste identique */}
     </div>
   );
 }
