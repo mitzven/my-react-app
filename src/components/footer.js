@@ -1,6 +1,5 @@
 // src/components/Footer.js
 import { Col, Container, Row } from "react-bootstrap";
-import { FaGithub, FaLinkedin, FaTwitter } from "react-icons/fa";
 import "./footer.css";
 
 function Footer() {
@@ -42,21 +41,21 @@ function Footer() {
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                <FaGithub className="footer-icon" />
+                <i className="bi bi-github footer-icon"></i>
               </a>
               <a
                 href="https://twitter.com"
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                <FaTwitter className="footer-icon" />
+                <i className="bi bi-twitter-x footer-icon"></i>
               </a>
               <a
                 href="https://linkedin.com"
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                <FaLinkedin className="footer-icon" />
+                <i className="bi bi-linkedin footer-icon"></i>
               </a>
             </div>
           </Col>
@@ -82,7 +81,7 @@ function Footer() {
               </li>
               <li>
                 <a href="/contact" className="footer-link">
-                  Contact
+                  Me contacter
                 </a>
               </li>
               <li>
@@ -97,12 +96,42 @@ function Footer() {
           <Col md={4}>
             <h5 className="title-footer">Mes dernières réalisations</h5>
             <ul className="list-unstyled">
-              <li>Fresh Food</li>
-              <li>Restaurant Akira</li>
-              <li>Espace bien-être</li>
-              <li>SEO</li>
-              <li>API</li>
-              <li>Maquette</li>
+              <li>
+                {" "}
+                <a href="/portfolio" className="footer-link">
+                  Fresh Food
+                </a>
+              </li>
+              <li>
+                {" "}
+                <a href="/portfolio" className="footer-link">
+                  Restaurant Akira
+                </a>
+              </li>
+              <li>
+                {" "}
+                <a href="/portfolio" className="footer-link">
+                  Espace bien-être
+                </a>
+              </li>
+              <li>
+                {" "}
+                <a href="/portfolio" className="footer-link">
+                  SEO
+                </a>
+              </li>
+              <li>
+                {" "}
+                <a href="/portfolio" className="footer-link">
+                  Création d'une API
+                </a>
+              </li>
+              <li>
+                {" "}
+                <a href="/portfolio" className="footer-link">
+                  Maquette d'un site
+                </a>
+              </li>
             </ul>
           </Col>
         </Row>

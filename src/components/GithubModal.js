@@ -1,11 +1,4 @@
 import { useEffect, useState } from "react";
-import {
-  FaCodeBranch,
-  FaInfoCircle,
-  FaMapMarkerAlt,
-  FaUser,
-  FaUsers,
-} from "react-icons/fa";
 import "./GithubModal.css";
 
 function GithubModal() {
@@ -50,7 +43,7 @@ function GithubModal() {
                 </div>
                 <div className="right-column">
                   <p>
-                    <FaUser className="icon" />{" "}
+                    <i class="bi bi-person icon"></i>{" "}
                     <a
                       href={githubData.html_url}
                       target="_blank"
@@ -62,26 +55,26 @@ function GithubModal() {
                   </p>
                   <hr />
                   <p>
-                    <FaMapMarkerAlt className="icon" />{" "}
+                    <i class="bi bi-geo-alt icon"></i>{" "}
                     {githubData.location || "2, Rue de Paris 94000 Créteil"}
                   </p>
                   <hr />
                   <p>
-                    <FaInfoCircle className="icon" /> {githubData.bio}
+                    <i class="bi bi-card-text icon"></i> {githubData.bio}
                   </p>
                   <hr />
                   <p>
-                    <FaCodeBranch className="icon" /> Repos publics :{""}
+                    <i class="bi bi-box icon"></i> Repos publics :{""}
                     {githubData.public_repos}
                   </p>
                   <hr />
                   <p>
-                    <FaUsers className="icon" /> Followers :{" "}
+                    <i class="bi bi-people icon"></i> Followers :{" "}
                     {githubData.followers}
                   </p>
                   <hr />
                   <p>
-                    <FaUsers className="icon" /> Following :{" "}
+                    <i class="bi bi-people icon"></i> Following :{" "}
                     {githubData.following}
                   </p>
                 </div>

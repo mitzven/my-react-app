@@ -37,81 +37,80 @@ function Home() {
           {/* Colonne A propos */}
           <div className="col-md-6 mb-4">
             <h3 className="HomeSubtitle2 fw-bold">À propos</h3>
-            <div className="p-3 border rounded shadow-sm">
-              <img
-                src="/images/john-doe-about.jpg"
-                alt="John Doe"
-                className="img-fluid mb-3"
-              />
-              <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio,
-                necessitatibus consectetur tempore perferendis nostrum, ex
-                delectus reiciendis impedit aut iure enim placeat? Natus, neque
-                at?
-              </p>
-              <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio,
-                necessitatibus consectetur tempore perferendis nostrum, ex
-                delectus reiciendis impedit aut iure enim placeat? Natus, neque
-                at?
-              </p>
-              <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio,
-                necessitatibus consectetur tempore perferendis nostrum, ex
-                delectus reiciendis impedit aut iure enim placeat? Natus, neque
-                at?
-              </p>
-            </div>
+            <img
+              src="/images/john-doe-about.jpg"
+              alt="John Doe"
+              className="img-fluid mb-3"
+            />
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio,
+              necessitatibus consectetur tempore perferendis nostrum, ex
+              delectus reiciendis impedit aut iure enim placeat? Natus, neque
+              at?
+            </p>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio,
+              necessitatibus consectetur tempore perferendis nostrum, ex
+              delectus reiciendis impedit aut iure enim placeat? Natus, neque
+              at?
+            </p>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio,
+              necessitatibus consectetur tempore perferendis nostrum, ex
+              delectus reiciendis impedit aut iure enim placeat? Natus, neque
+              at?
+            </p>
           </div>
 
           {/* Colonne Mes compétences */}
           <div className="col-md-6 mb-4">
             <h3 className="HomeSubtitle2 fw-bold">Mes compétences</h3>
-            <div className="p-3 border rounded shadow-sm">
-              <p>HTML5 90%</p>
-              <div className="progress mb-3">
-                <div
-                  className="progress-bar bg-danger"
-                  style={{ width: "90%" }}
-                ></div>
-              </div>
+            <p>HTML5 90%</p>
+            <div className="progress mb-3">
+              <div
+                className="progress-bar bg-danger"
+                style={{ width: "90%" }}
+              ></div>
+            </div>
 
-              <p>CSS3 80%</p>
-              <div className="progress mb-3">
-                <div
-                  className="progress-bar bg-info"
-                  style={{ width: "80%" }}
-                ></div>
-              </div>
+            <p>CSS3 80%</p>
+            <div className="progress mb-3">
+              <div
+                className="progress-bar bg-info"
+                style={{ width: "80%" }}
+              ></div>
+            </div>
 
-              <p>JavaScript 70%</p>
-              <div className="progress mb-3">
-                <div
-                  className="progress-bar bg-warning"
-                  style={{ width: "70%" }}
-                ></div>
-              </div>
+            <p>JAVASCRIPT 70%</p>
+            <div className="progress mb-3">
+              <div
+                className="progress-bar bg-warning"
+                style={{ width: "70%" }}
+              ></div>
+            </div>
 
-              <p>PHP 60%</p>
-              <div className="progress mb-3">
-                <div
-                  className="progress-bar bg-success"
-                  style={{ width: "60%" }}
-                ></div>
-              </div>
+            <p>PHP 60%</p>
+            <div className="progress mb-3">
+              <div
+                className="progress-bar bg-success"
+                style={{ width: "60%" }}
+              ></div>
+            </div>
 
-              <p>React 50%</p>
-              <div className="progress mb-3">
-                <div
-                  className="progress-bar bg-primary"
-                  style={{ width: "50%" }}
-                ></div>
-              </div>
+            <p>REACT 50%</p>
+            <div className="progress mb-3">
+              <div
+                className="progress-bar bg-primary"
+                style={{ width: "50%" }}
+              ></div>
             </div>
           </div>
         </div>
       </div>
+
+      {/* ... le reste identique */}
     </div>
   );
 }
+
 export default Home;
